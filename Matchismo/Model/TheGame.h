@@ -15,4 +15,5 @@
 @property (readonly, nonatomic) NSInteger score;
 @property (strong, nonatomic) NSString *message;
 @property (strong, nonatomic) NSAttributedString *attributedMessage;
+@property (strong, nonatomic) NSArray *gameScores;
 @end

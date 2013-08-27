@@ -27,19 +27,23 @@
 		F779B4DE17BBEF580007A94E /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F779B4DD17BBEF580007A94E /* PlayingCard.m */; };
 		F779B4E417BC66720007A94E /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = F779B4E317BC66720007A94E /* PlayingCardDeck.m */; };
 		F786B0CC17C80A8200941B55 /* ScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F786B0CB17C80A8200941B55 /* ScoreViewController.m */; };
+		F786B0D017C80B8D00941B55 /* GameResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F786B0CF17C80B8D00941B55 /* GameResult.m */; };
+		F786B0D917C85F0D00941B55 /* spade.png in Resources */ = {isa = PBXBuildFile; fileRef = F786B0D817C85F0D00941B55 /* spade.png */; };
+		F786B0DB17C85FF700941B55 /* diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = F786B0DA17C85FF700941B55 /* diamond.png */; };
+		F786B0DD17C8610E00941B55 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = F786B0DC17C8610E00941B55 /* star.png */; };
 		F7E3B6FC17C14B50004220D7 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E3B6FB17C14B50004220D7 /* Card.m */; };
 		F7E3B6FF17C14C7F004220D7 /* TheMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E3B6FE17C14C7F004220D7 /* TheMatchingGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F704121017B6F7E100B2F1B0 /* TheSetGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheSetGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F704121017B6F7E100B2F1B0 /* TheBeautifulSetGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBeautifulSetGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F704121417B6F7E100B2F1B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F704121617B6F7E100B2F1B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F704121817B6F7E100B2F1B0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F704121C17B6F7E100B2F1B0 /* TheSetGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TheSetGame-Info.plist"; sourceTree = "<group>"; };
+		F704121C17B6F7E100B2F1B0 /* TheBeautifulSetGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TheBeautifulSetGame-Info.plist"; sourceTree = "<group>"; };
 		F704121E17B6F7E100B2F1B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F704122017B6F7E100B2F1B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F704122217B6F7E100B2F1B0 /* TheSetGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TheSetGame-Prefix.pch"; sourceTree = "<group>"; };
+		F704122217B6F7E100B2F1B0 /* TheBeautifulSetGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TheBeautifulSetGame-Prefix.pch"; sourceTree = "<group>"; };
 		F704122317B6F7E100B2F1B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F704122417B6F7E100B2F1B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F704122617B6F7E100B2F1B0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -66,6 +70,11 @@
 		F779B4E317BC66720007A94E /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Model/PlayingCardDeck.m; sourceTree = "<group>"; };
 		F786B0CA17C80A8200941B55 /* ScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreViewController.h; sourceTree = "<group>"; };
 		F786B0CB17C80A8200941B55 /* ScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreViewController.m; sourceTree = "<group>"; };
+		F786B0CE17C80B8D00941B55 /* GameResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameResult.h; path = Model/GameResult.h; sourceTree = "<group>"; };
+		F786B0CF17C80B8D00941B55 /* GameResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameResult.m; path = Model/GameResult.m; sourceTree = "<group>"; };
+		F786B0D817C85F0D00941B55 /* spade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spade.png; sourceTree = "<group>"; };
+		F786B0DA17C85FF700941B55 /* diamond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diamond.png; sourceTree = "<group>"; };
+		F786B0DC17C8610E00941B55 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		F7E3B6FA17C14B50004220D7 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
 		F7E3B6FB17C14B50004220D7 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
 		F7E3B6FD17C14C7E004220D7 /* TheMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TheMatchingGame.h; path = Model/TheMatchingGame.h; sourceTree = "<group>"; };
@@ -98,7 +107,7 @@
 		F704121117B6F7E100B2F1B0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F704121017B6F7E100B2F1B0 /* TheSetGame.app */,
+				F704121017B6F7E100B2F1B0 /* TheBeautifulSetGame.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,12 +138,15 @@
 			children = (
 				F704122317B6F7E100B2F1B0 /* AppDelegate.h */,
 				F704122417B6F7E100B2F1B0 /* AppDelegate.m */,
-				F704121C17B6F7E100B2F1B0 /* TheSetGame-Info.plist */,
+				F704121C17B6F7E100B2F1B0 /* TheBeautifulSetGame-Info.plist */,
 				F704121D17B6F7E100B2F1B0 /* InfoPlist.strings */,
 				F704122017B6F7E100B2F1B0 /* main.m */,
-				F704122217B6F7E100B2F1B0 /* TheSetGame-Prefix.pch */,
+				F786B0DA17C85FF700941B55 /* diamond.png */,
+				F786B0DC17C8610E00941B55 /* star.png */,
+				F704122217B6F7E100B2F1B0 /* TheBeautifulSetGame-Prefix.pch */,
 				F704122617B6F7E100B2F1B0 /* Default.png */,
 				F704122817B6F7E100B2F1B0 /* Default@2x.png */,
+				F786B0D817C85F0D00941B55 /* spade.png */,
 				F704122A17B6F7E100B2F1B0 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
@@ -179,10 +191,10 @@
 			children = (
 				F704122F17B6F7E100B2F1B0 /* ViewController.h */,
 				F704123017B6F7E100B2F1B0 /* ViewController.m */,
-				F711445817C3EC40008B4487 /* TheSetGameViewController.h */,
-				F711445917C3EC40008B4487 /* TheSetGameViewController.m */,
 				F786B0CA17C80A8200941B55 /* ScoreViewController.h */,
 				F786B0CB17C80A8200941B55 /* ScoreViewController.m */,
+				F711445817C3EC40008B4487 /* TheSetGameViewController.h */,
+				F711445917C3EC40008B4487 /* TheSetGameViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -198,6 +210,8 @@
 				F7E3B6FB17C14B50004220D7 /* Card.m */,
 				F779B4D917BB24B10007A94E /* Deck.h */,
 				F779B4DA17BB24B10007A94E /* Deck.m */,
+				F786B0CE17C80B8D00941B55 /* GameResult.h */,
+				F786B0CF17C80B8D00941B55 /* GameResult.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -205,9 +219,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F704120F17B6F7E000B2F1B0 /* TheSetGame */ = {
+		F704120F17B6F7E000B2F1B0 /* TheBeautifulSetGame */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F704123417B6F7E100B2F1B0 /* Build configuration list for PBXNativeTarget "TheSetGame" */;
+			buildConfigurationList = F704123417B6F7E100B2F1B0 /* Build configuration list for PBXNativeTarget "TheBeautifulSetGame" */;
 			buildPhases = (
 				F704120C17B6F7E000B2F1B0 /* Sources */,
 				F704120D17B6F7E000B2F1B0 /* Frameworks */,
@@ -217,9 +231,9 @@
 			);
 			dependencies = (
 			);
-			name = TheSetGame;
+			name = TheBeautifulSetGame;
 			productName = Matchismo;
-			productReference = F704121017B6F7E100B2F1B0 /* TheSetGame.app */;
+			productReference = F704121017B6F7E100B2F1B0 /* TheBeautifulSetGame.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -231,7 +245,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Maer Studios Inc";
 			};
-			buildConfigurationList = F704120A17B6F7E000B2F1B0 /* Build configuration list for PBXProject "TheSetGame" */;
+			buildConfigurationList = F704120A17B6F7E000B2F1B0 /* Build configuration list for PBXProject "TheBeautifulSetGame" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -243,7 +257,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F704120F17B6F7E000B2F1B0 /* TheSetGame */,
+				F704120F17B6F7E000B2F1B0 /* TheBeautifulSetGame */,
 			);
 		};
 /* End PBXProject section */
@@ -258,6 +272,9 @@
 				F704122917B6F7E100B2F1B0 /* Default@2x.png in Resources */,
 				F704122B17B6F7E100B2F1B0 /* Default-568h@2x.png in Resources */,
 				F704122E17B6F7E100B2F1B0 /* MainStoryboard.storyboard in Resources */,
+				F786B0D917C85F0D00941B55 /* spade.png in Resources */,
+				F786B0DB17C85FF700941B55 /* diamond.png in Resources */,
+				F786B0DD17C8610E00941B55 /* star.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +299,7 @@
 				F774881517C459F000D11326 /* TheGame.m in Sources */,
 				F774881C17C45BCA00D11326 /* TheSetGame.m in Sources */,
 				F786B0CC17C80A8200941B55 /* ScoreViewController.m in Sources */,
+				F786B0D017C80B8D00941B55 /* GameResult.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,9 +379,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Matchismo/TheSetGame-Prefix.pch";
-				INFOPLIST_FILE = "Matchismo/TheSetGame-Info.plist";
-				PRODUCT_NAME = TheSetGame;
+				GCC_PREFIX_HEADER = "Matchismo/TheBeautifulSetGame-Prefix.pch";
+				INFOPLIST_FILE = "Matchismo/TheBeautifulSetGame-Info.plist";
+				PRODUCT_NAME = TheBeautifulSetGame;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -372,9 +390,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Matchismo/TheSetGame-Prefix.pch";
-				INFOPLIST_FILE = "Matchismo/TheSetGame-Info.plist";
-				PRODUCT_NAME = TheSetGame;
+				GCC_PREFIX_HEADER = "Matchismo/TheBeautifulSetGame-Prefix.pch";
+				INFOPLIST_FILE = "Matchismo/TheBeautifulSetGame-Info.plist";
+				PRODUCT_NAME = TheBeautifulSetGame;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -382,7 +400,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F704120A17B6F7E000B2F1B0 /* Build configuration list for PBXProject "TheSetGame" */ = {
+		F704120A17B6F7E000B2F1B0 /* Build configuration list for PBXProject "TheBeautifulSetGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F704123217B6F7E100B2F1B0 /* Debug */,
@@ -391,7 +409,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F704123417B6F7E100B2F1B0 /* Build configuration list for PBXNativeTarget "TheSetGame" */ = {
+		F704123417B6F7E100B2F1B0 /* Build configuration list for PBXNativeTarget "TheBeautifulSetGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F704123517B6F7E100B2F1B0 /* Debug */,

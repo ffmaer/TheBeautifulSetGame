@@ -10,6 +10,7 @@
 #import "PlayingCardDeck.h"
 #import "PlayingCard.h"
 #import "TheMatchingGame.h"
+#import "GameResult.h"
 
 @interface ViewController ()
 @property (nonatomic) int flipsCount;
@@ -22,9 +23,15 @@
 @property (strong,nonatomic) TheMatchingGame *game;
 @property (strong,nonatomic) Deck* deck;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property (strong,nonatomic) GameResult *gameResult;
 @end
 
 @implementation ViewController
+
+-(GameResult *)gameResult{
+    if(!_gameResult) _gameResult = [[GameResult alloc]init];
+    return _gameResult;
+}
 
 -(Deck *)deck{
     if(!_deck) _deck = [[PlayingCardDeck alloc ]init];
@@ -56,6 +63,7 @@
 }
 
 -(void)updateUI{
+    
     self.matchLabel.alpha=1;
     self.historySlider.enabled = YES;
     self.mode.enabled = NO;
@@ -70,9 +78,10 @@
     self.historySlider.minimumValue=0;
     self.historySlider.maximumValue=self.history.count-1;
     
-    
     [self updateCards];
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d",self.game.score];
+    [self.gameResult setScore: self.game.score];
+    
 }
 
 -(NSMutableArray *)history{

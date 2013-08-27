@@ -16,15 +16,15 @@
                     </tabBar>
                     <connections>
                         <segue destination="2" kind="relationship" relationship="viewControllers" id="BCE-am-FBo"/>
-                        <segue destination="Tj3-Zu-Gjk" kind="relationship" relationship="viewControllers" id="WjD-MM-MFf"/>
                         <segue destination="dMy-Eg-PIY" kind="relationship" relationship="viewControllers" id="Qth-On-u5k"/>
+                        <segue destination="Tj3-Zu-Gjk" kind="relationship" relationship="viewControllers" id="WjD-MM-MFf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nQJ-zf-lL8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-578" y="-512"/>
         </scene>
-        <!--View Controller - Item-->
+        <!--View Controller - Matching-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
@@ -448,7 +448,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Hx9-sM-sXf"/>
+                    <tabBarItem key="tabBarItem" title="Matching" image="spade.png" id="Hx9-sM-sXf"/>
                     <connections>
                         <outlet property="flipLabel" destination="nkp-3s-jRa" id="fz3-PS-hPS"/>
                         <outlet property="historySlider" destination="PhL-zo-WRQ" id="NTQ-9J-1IY"/>
@@ -485,15 +485,15 @@
             </objects>
             <point key="canvasLocation" x="-12" y="-1370"/>
         </scene>
-        <!--View Controller - Item-->
+        <!--Score View Controller - Results-->
         <scene sceneID="77y-C0-Q2v">
             <objects>
-                <viewController id="dMy-Eg-PIY" sceneMemberID="viewController">
+                <viewController id="dMy-Eg-PIY" customClass="ScoreViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kLx-QD-lAY">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="S42-tU-v1C">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="S42-tU-v1C">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="341"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -511,6 +511,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="sortByScore" destination="dMy-Eg-PIY" eventType="touchUpInside" id="umG-bz-6t1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5sI-Yc-vbG">
                                 <rect key="frame" x="227" y="349" width="73" height="44"/>
@@ -523,6 +526,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="sortByDuration" destination="dMy-Eg-PIY" eventType="touchUpInside" id="a84-se-mWA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VWS-RV-pEV">
                                 <rect key="frame" x="124" y="349" width="73" height="44"/>
@@ -535,17 +541,23 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="sortByDate" destination="dMy-Eg-PIY" eventType="touchUpInside" id="4xn-kb-lVe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="QTl-DE-6Lf"/>
+                    <tabBarItem key="tabBarItem" title="Results" image="star.png" id="QTl-DE-6Lf"/>
+                    <connections>
+                        <outlet property="display" destination="S42-tU-v1C" id="j0o-MM-AX4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MCv-WB-Gxv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4" y="-745"/>
         </scene>
-        <!--The Set Game View Controller - Item-->
+        <!--The Set Game View Controller - Set-->
         <scene sceneID="DM7-QE-GWd">
             <objects>
                 <viewController id="Tj3-Zu-Gjk" customClass="TheSetGameViewController" sceneMemberID="viewController">
@@ -954,7 +966,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Kgo-2b-TKe"/>
+                    <tabBarItem key="tabBarItem" title="Set" image="diamond.png" id="Kgo-2b-TKe"/>
                     <connections>
                         <outlet property="flipLabel" destination="dlG-D5-duJ" id="Zeb-It-Gjb"/>
                         <outlet property="historySlider" destination="dgt-cf-ZMp" id="Tav-rc-9P6"/>
@@ -991,7 +1003,18 @@
             <point key="canvasLocation" x="6" y="-135"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="diamond.png" width="30" height="30"/>
+        <image name="spade.png" width="30" height="30"/>
+        <image name="star.png" width="30" height="30"/>
+    </resources>
     <classes>
+        <class className="ScoreViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScoreViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="display" candidateClass="UITextView"/>
+            </relationships>
+        </class>
         <class className="TheSetGameViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TheSetGameViewController.h"/>
             <relationships>
